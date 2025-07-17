@@ -110,7 +110,7 @@ footer {
 
 @media (min-width: 768px) {
     main {
-        max-width: 384px;
+        max-width: 360px;
     }
 
     .title {
