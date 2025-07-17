@@ -19,33 +19,33 @@ body {
     justify-content: center;
     min-height: 100vh;
     background-color: var(--yellow);
-    font-size: 16px;
-    padding: 20px;
+    font-size: 1rem;
+    padding: 1.5rem;
 }
 
 main {
-    max-width: min(90%,300px);
-    padding: 20px;
+    max-width: min(90%,384px);
+    height: 522px;
+    padding: 1.5rem;
     background-color: var(--white);
     border: 1px solid var(--grey950);
-    border-radius: 20px;
-    box-shadow: 8px 6px 2px var(--grey950);
+    border-radius: 16px;
+    box-shadow: 8px 8px var(--grey950);
 }
 
 .article-img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
 }
 
 .btn {
-    padding: 6px 10px;
-    border-radius: 5px;
+    display: bl;
+    padding: 4px 12px;
+    border-radius: 6px;
     background-color: var(--yellow);
     border: none;
     font-size: 14px;
-    font-weight: bold;
-    margin: 12px 0 10px;
+    font-weight: 800;
     cursor: pointer;
 }
 
@@ -55,16 +55,16 @@ main {
 }
 
 .date {
-    font-size: 0.75rem;
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.75rem 0;
     color: var(--grey950);
 }
 
 .title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 0.75rem;
     cursor: pointer;
 }
 
@@ -73,24 +73,26 @@ main {
 }
 
 .description {
-    font-size: 0.875rem;
+    font-size: 1rem;
+    font-weight: 500;
     color: var(--grey500);
+    line-height: 1.5;
 }
 
 .author {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-top: 14px;
+    gap: 12px;
+    margin-top: 1.75rem;
 }
 
 .author img {
-    width: 30px;
+    height: 32px;
 }
 
 .author .name {
     font-weight: bold;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     font-weight: 800;
 }
 
@@ -105,23 +107,4 @@ footer {
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
-}
-
-
-@media (min-width: 768px) {
-    main {
-        max-width: 360px;
-    }
-
-    .title {
-        font-size: 1.5rem;
-    }
-
-    .description {
-        font-size: 1rem;
-    }
-
-    .name {
-        font-size: 0.875rem;
-    }
 }
