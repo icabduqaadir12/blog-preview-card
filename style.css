@@ -1,0 +1,107 @@
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey500: hsl(0, 0%, 42%);
+    --grey950: hsl(0, 0%, 7%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--yellow);
+    font-size: 16px;
+}
+
+main {
+    max-width: min(90%,300px);
+    padding: 20px;
+    background-color: var(--white);
+    border: 1px solid var(--grey950);
+    border-radius: 20px;
+    box-shadow: 8px 6px 2px var(--grey950);
+}
+
+.article-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn {
+    padding: 6px 10px;
+    border-radius: 5px;
+    background-color: var(--yellow);
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 12px 0 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--yellow);
+}
+
+.date {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--grey950);
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: var(--yellow);
+}
+
+.description {
+    font-size: 14px;
+    color: var(--grey500);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.author img {
+    width: 30px;
+}
+
+.author .name {
+    font-weight: bold;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: var(--grey950);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
